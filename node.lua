@@ -68,7 +68,7 @@ function node.render()
 
 	elseif(phase < 3) then
 		-- slowly move out
-		bw_logo_pos_x  = (WIDTH/2) -math.sin((phase-2)*(math.pi*0.5))*1500
+		bw_logo_pos_x  = (WIDTH/2) -1500 +math.sin((phase-2)*(math.pi*0.5)+(math.pi*0.5)) *1500
 		lug_logo_pos_x = (WIDTH/2) +1500
 		bi_logo_pos_x  = (WIDTH/2) +1500
 
@@ -89,7 +89,7 @@ function node.render()
 	elseif(phase < 6)	then
 		-- slowly move out
 		bw_logo_pos_x  = (WIDTH/2) +1500
-		lug_logo_pos_x = (WIDTH/2) -math.sin((phase-5)*(math.pi*0.5))*1500
+		lug_logo_pos_x = (WIDTH/2) -1500 +math.sin((phase-5)*(math.pi*0.5)+(math.pi*0.5))*1500
 		bi_logo_pos_x  = (WIDTH/2) +1500
 
 	elseif(phase < 7)	then
@@ -108,7 +108,7 @@ function node.render()
 		-- slowly move out
 		bw_logo_pos_x  = (WIDTH/2) +1500
 		lug_logo_pos_x = (WIDTH/2) +1500
-		bi_logo_pos_x  = (WIDTH/2) -math.sin((phase-8)*(math.pi*0.5))*1500
+		bi_logo_pos_x  = (WIDTH/2) -1500 +math.sin((phase-8)*(math.pi*0.5)+(math.pi*0.5))*1500
 
 	else
 		bw_logo_pos_x  = (WIDTH/2) +1500
