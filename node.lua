@@ -46,7 +46,7 @@ local lug_logo_h=300 --410 original
 function node.render()
 	gl.clear(0,0,0,0)
 	local now = sys.now()
-	local phase = now%9
+	local phase = ((now/5)%9)
 	moveInSpeed = 0.5
 
 
